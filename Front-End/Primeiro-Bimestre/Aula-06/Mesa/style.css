@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap');
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    back
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+article {
+
+  background-image: url("https://seriemaniacos.tv/wp-content/uploads/2017/08/Snowfall.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  font-size: 100px;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: white
+
+}
+
+body {
+
+    background-color: #000000;
+    
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #00c742;
+    background-color: #ffffff;
+    width: 100px;
+    
+
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
