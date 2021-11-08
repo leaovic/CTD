@@ -1,22 +1,22 @@
 // Ex1. O que cada expressão retorna?
 
-// console.log(!true);
+console.log(!true);
 
-// console.log(!false);
+console.log(!false);
 
-// console.log(!!false);
+console.log(!!false);
 
-// console.log(!!true);
+console.log(!!true);
 
-// console.log(!1);
+console.log(!1);
 
-// console.log(!!1);
+console.log(!!1);
 
-// console.log(!0);
+console.log(!0);
 
-// console.log(!!0);
+console.log(!!0);
 
-// console.log(!!"");
+console.log(!!"");
 
 // let x=5;
 // let y=9;
