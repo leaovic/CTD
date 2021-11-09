@@ -12,7 +12,7 @@
 //     }
 // }
 
-console.log(podeSubir(3, true));
+// console.log(podeSubir(3, true));
 
 function podeSubir(altura, responsavel) {
     if (altura >= 1.40 && altura <= 2.0){
@@ -26,4 +26,4 @@ function podeSubir(altura, responsavel) {
     }
 }
 
-podeSubir(1.80, false)
+podeSubir(1.20, true)
