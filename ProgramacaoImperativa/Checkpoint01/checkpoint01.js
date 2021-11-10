@@ -1,40 +1,48 @@
 
+let padrao=null;
 
-// DIGITE AQUI SEU PRATO
-let menu = "pipoca";
+function microondas(prato,tempo) {
 
-
-switch (menu) {
-    case "pipoca":
-        console.log("Modo Pipoca");
-        break;
-    case "macarrao":
-        console.log("Modo Macarrao");
-        break;
-    case "carne":
-        console.log("Modo Carne");
-        break;
-    case "feijao":
-        console.log("Modo Feijao");
-    case "brigadeiro":
-        console.log("Modo Brigadeiro");
-    default:
-        console.log("Prato Inexistente")
-}
-
-function pipoca(tempo, padrao, menu) {
-    if (tempo == (2*10) && padrao == 10){
-        console.log("comida queimou");
+    switch (prato) {
+        case  "Pipoca":
+            padrao = 10;
+            break;
+        case  "Macarrão":
+            padrao = 8;
+            break;
+        case  "Carne":
+            padrao = 15;
+            break;
+        case  "Feijão":
+            padrao = 12;
+            break;
+        case  "Brigadeiro":
+            padrao = 8;
+            break;
+        default:
+            console.log("Prato inexistente")
+            padrao = null;
+            tempo = null;
+            break;
     }
-   else if (tempo >=10*3) {
-       console.log("Kabum!!!");
-   }
-    else if (tempo <=9) {
-        console.log("Tempo insuficiente");
+
+    if (tempo>(2*padrao)&&tempo<(3*padrao)){
+        console.log("Comida queimou")
     }
+        else if (tempo==null&&padrao==null) {
+            console.log(" ")
+        }
+        else if (tempo<padrao){
+            console.log("Tempo Insuficiente")
+        }
+
+        else if (tempo>=(3*padrao)) {
+            console.log("KABUM!")
+        }
+
     else {
-        console.log("Prato pronto, bom apetite");
+        console.log("Prato pronto, bom apetite!")
     }
 }
 
-pipoca(8,10);
+microondas("Carne",30)
