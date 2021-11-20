@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadadtro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div>
+        <h1 class="title">Digital Doces</h1>
+        <p class="subtitle">Uma cafeteria com a proposta de trazer ao público, em um cardápio enxuto, doces e salgados 100% livres do glúten e da proteína do leite. No menu, pão de “queijo”  da casa da avó, bolos para um café da tarde com as amigas e as sobremesas gostosas dos almoços de domingo. Sobremesas na taça são a grande sensação: “cheese”cake vegana de frutas , banoffe e mousse de chocolate zero açúcar, além dos bolinhos caseiros e recheados. Quem quiser só adoçar um pouquinho a boca, pode pedir um (ou mais) brigadeiro (R$3 cada). Para acompanhar, chás, cafés e chocolate quente casam bem com qualquer opção.</p>
+    </div>
+
+    <form>
+     <fieldset class="grupo">
+         <h2> Digite seus dados:</h2>
+        <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+        <div class="campo">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+        <div class="campo">
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" name="nascimento" id="nascimento">
+        </div>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="campo">
+            <label for="telefone">Telefone para contato</label>
+            <input type="tel" name="telefone" id="telefone" maxlength="11" placeholder="99 99999 9999" required>
+        </div>
+        <div class="campo">
+            <label for="idade">Possui Whatsapp?</label>
+            <label for="
+            "> <input type="radio" name="idade" value="sim" checked>Sim</label>
+            <label for="
+            "> <input type="radio" name="idade" value="nao">Nao</label>
+        </div>
+        <h3>Escolha seu pedido ou nos desafie enviando sua receita:</h3>
+        <div class="campo">
+            <label for="caixadetexto">Descreva em poucas palavras seu pedido(SUA RECEITA)</label>
+        </div>
+        <div class="campo">
+            <textarea name="caixadetexto" id="caixadetexto" cols="30" rows="10" maxlength="500" placeholder="Se preferir, deixe em branco e escolha uma de nossas especialidades logo abaixo"></textarea>
+        </div>
+
+        <div  class="campo">
+           <h3>Tortas</h3>
+           <div>
+            <label for="limaofrancesa">Torta de limão francesa</label>
+            <input type="checkbox" name="limaofrancesa" id="limaofrancesa">
+            <p>essa receita é perfeita para fugir do trivial. Ótima para quando vai receber visitas, já que rende bastante e não dá trabalho para fazer. Vale ressaltar que o sabor fica bem azedinho e você pode colocar frutas mais docinhas na cobertura para equilibrar</p>
+           </div>
+           <div>
+            <label for="maca">Torta de maçã</label>
+            <input type="checkbox" name="maca" id="maca">
+            <p>quer deixar sua mãe (ou sua avó) orgulhosa de você? Aqui está a receita! Essa torta de maçã é daquelas caseiras e suculentas, e fica com uma casquinha crocante por cima e perfuma a casa. Huummm…</p>
+           </div>
+           <div>
+            <label for="maracuja">Torta francesa de maracujá</label>
+            <input type="checkbox" name="maracuja" id="maracuja">
+            <p>bem simples e deliciosa, essa torta usa como base o famoso creme francês (ou curd). Tradicionalmente feito com limão, aqui aparece com a troca, com maracujá.</p>
+           </div>
+           <div>
+            <label for="banana">Torta de banana</label>
+            <input type="checkbox" name="banana" id="banana">
+            <p>banana é uma fruta extremamente versátil. Dela, podemos fazer receitas salgadas, doces, compotas, bolos, vitaminas e tortas, claro. Simples e rápida de fazer, ótima para variar o consumo da fruta.</p>
+           </div>
+           <div>
+            <label for="batatadoce">Torta de batata-doce</label>
+            <input type="checkbox" name="batatadoce" id="batatadoce">
+            <p> tipicamente americana, essa é uma ideia para variar o uso da batata-doce. Não existe apenas aquele doce tradicional junino, essa receita prova que dá para variar bem e aproveitar o tubérculo de outras formas, basta criatividade.</p>
+           </div>
+           <div>
+            <label for="maca"> Torta de frutas</label>
+            <input type="checkbox" name="maca" id="maca">
+            <p> a base dessa torta é manteiga e bolacha triturada, apenas. E para o recheio, a sugestão aqui foi de frutas amarelas, manga e pêssego. Você pode optar por usar uma fruta só, ou várias, para deixar bem colorido. Basta cortar em fatias e sobrepor ao creme</p>
+           </div>
+           <div>
+            <label for="limanga">Torta refrescante com creme de limão e manga</label>
+            <input type="checkbox" name="limanga" id="limanga">
+            <p>ótima pedida para aqueles dias de calor intenso, essa torta traz a refrescância do limão combinada com o docinho da manga. Para um sabor mais fresquinho, adicione folhinhas de manjericão na decoração. Ah, essa receita ainda é sem glúten, leite, ovos e sem soja.</p>
+           </div>
+           <div>
+            <label for="liche">Torta de limão com ganache</label>
+            <input type="checkbox" name="liche" id="liche">
+            <p>você já experimentou algum doce que combine limão com chocolate? Se não, corra para a cozinha e capriche nessa receita. A combinação fica incrível, com o limão equilibrando o doce do chocolate.</p>
+           </div>
+           <div>
+            <label for="maca">  Torta de maçã</label>
+            <input type="checkbox" name="maca" id="maca">
+           </div>
+          
+           <h3>Bolos</h3>
+           <h3>Docinhos</h3>
+        </div>
+     </fieldset>
+     <fieldset>
+         <div>
+             <h2>Adicionais</h2>
+             <p>Buscamos um mundo melhor e para isso evitamos o uso de descartaveis, mas se preferir marque quais produtos descartaveis precisa para apreciar seu maravilhoso doce.</p>
+         </div>
+         <div>
+             <label for="plataforma">Diz ai do que precisa?</label>
+             <label for="gostei">Garfos e facas</label>
+             <input type="checkbox" name="gostei" id="gostei">
+             <label for="plataforma">Guardanapos e Canudos</label>
+             <input type="checkbox" name="nao-gostei" id="naoGostei">
+         </div>
+     </fieldset>
+        
+    </form>
+
+    <button class="main-button">Enviar pedido</button>
+    <button class="main-button">Limpar formulario</button>
+
+
+    
+</body>
+</html>

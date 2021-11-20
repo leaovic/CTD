@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-button {
+    
+}
+
+.main-button {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    background-color: #32cc42;
+    border-radius: 12px;
+}
+
+.main-button:hover {
+    background-color: #0b4d27
+}
+
+label {
+    font-size: 20px;
+}
+
+input:focus {
+    background-color: #dadada;
+}
