@@ -67,7 +67,19 @@ fieldset .grupo .campo {
 }
 
 .main-button:hover {
-    background: #ccbbff;
+    background: #3d00f5;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
+
+a:hover {
+    background: #6f6a7e93;
+    border-color: yellow;
+    border: 1px;
+    border-radius: 5px;
+}
+a:active {
+    background: yellow;
+}
+
+
