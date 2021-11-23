@@ -1,0 +1,54 @@
+main {
+    padding: 32px;
+}
+
+div {
+    display: inline-block;
+    
+}
+
+.main-button {
+    color: white;
+    background-color: #2e77ca;
+    border: 0;
+    padding: 12px;
+    font-size: 10px;
+    border-radius: 12px;
+    transition: .4s ease-in-out;
+    display: block;
+    margin: o auto;
+    margin-bottom: 12px;
+    /* transition-duration: .4s;
+    transition-timing-function: ease-in-out; */
+    /* transition-property: background padding; */
+}
+
+.main-button:hover {
+   
+    background-color: #6aabf6;
+    padding: 10px;
+    /* transform: scale(1.5) skew(-20deg) rotate(5deg); */
+    transform: scale(1.5) translate(0, -10px)
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, -30px);
+    }
+
+    50% {
+        transform: translate(0, 30px);
+    }
+    100% {
+        transform: translate(0, -30px);
+    }
+}
+
+.ghost {
+    font-size: 200px;
+    display: block;
+    text-align: center;
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
