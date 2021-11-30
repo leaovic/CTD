@@ -16,13 +16,13 @@
 
 // console.log(carro.andar() );
 
-function Carro(modelo, cor) 
-    this.modelo = modelo;
-    this.cor = cor;
-    this.pular = function(){
-        return "meu "+this.modelo+" esta pulando";
-    }
-}
+// function Carro(modelo, cor) 
+//     this.modelo = modelo;
+//     this.cor = cor;
+//     this.pular = function(){
+//         return "meu "+this.modelo+" esta pulando";
+//     }
+// }
 
 // let carro1 = new Carro("Ford", "Azul");
 // let carro2 = new Carro("Tesla", "Vermelho");
