@@ -1,0 +1,130 @@
+
+<!-- https://www.youtube.com/watch?v=VCsNIRXNsmY
+
+TERMINAR DEPOIS -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Formlário</title>
+   
+  </head>
+  <body>
+    <div class="box">
+      <form action="">
+        <fieldset>
+          <legend><b>Formlário de Clientes</b></legend>
+          <br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="name"
+              id="nome"
+              class="inputUser"
+              required
+            />
+            <label class="labelInput" for="nome">Nome completo</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="inputUser"
+              required
+            />
+            <label class="labelInput" for="email">Email</label>
+           
+          </div>
+          <br><br>
+          <div class="inputBox">
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              class="inputUser"
+              required
+            />
+            <label class="labelInput" for="telefone">Telefone</label>
+            <br /><br />
+          </div>
+          <p>Sexo:</p>
+          <input
+            type="radio"
+            name="genero"
+            id="feminino"
+            value="feminino"
+            required
+          />
+          <label  for="feminino">Feminino</label>
+          <input
+            type="radio"
+            name="genero"
+            id="masculino"
+            value="masculino"
+            required
+          />
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="genero" id="outro" value="outro" required />
+          <label for="outro">Outro</label>
+          <br><br>
+          <div class="inputBox">
+            <label for="dataNascimento"><b>Data de Nascimento</b></label>
+            <input
+              type="date"
+              name="dataNascimento"
+              id="dataNascimento"
+             
+              required
+            />
+            <br /><br />
+            <div class="inputBox">
+              <input
+                type="text"
+                name="cidade"
+                id="cidade"
+                class="inputUser"
+                required
+              />
+              <label class="labelInput" for="cidade">Cidade</label>
+            </div>
+            <br /><br />
+            <div class="inputBox">
+              <input
+                type="text"
+                name="estado"
+                id="estado"
+                class="inputUser"
+                required
+              />
+              <label class="labelInput" for="estado">Estado</label>
+            </div>
+            <br /><br />
+            <div class="inputBox">
+              <input
+                type="text"
+                name="Endereco"
+                id="Endereco"
+                class="inputUser"
+                required
+              />
+              <label class="labelInput" for="Endereco">Endereço</label>
+              <br /><br />
+            </div>
+          </div>
+          <input type="submit" name="submit" id="submit" />
+          
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

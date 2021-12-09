@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 .container {
-    position: realtive;
+    position: relative;
     width: 100%;
 }
 .navigation {
