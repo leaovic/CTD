@@ -1,7 +1,7 @@
 const arrayEstudantesImported = require('./estudantes');
 const AlunoImported = require('./construtor');
 
-console.log("")
+console.log("-------------------------------------------------")
 
 const curso = {
     nomeDoCurso: 'CTD',
