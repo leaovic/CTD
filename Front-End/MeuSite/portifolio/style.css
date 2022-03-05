@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #353432;
+    color: #edf6ee;
+    width: 100%;
+    height: 5em;
+    position: fixed;
+}
+
+header img {
+    margin: 15px 0 0 20px;
+}
+
+main {
+    background: #4e4d4a;
+    color: #edf6ee;
+    height: 100vh;
+    padding-top: 5em;
+    display: flex;
+    gap: 20px
+   
+}
+
+footer {
+    background: #2b4e72;
+    color: #edf6ee;
+}
+
+.products p {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+}
