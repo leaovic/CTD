@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedra Papel Tesoura</title>
+  </head>
+  <body
+    style="
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    "
+  >
+    <button onclick="match()">Começar game</button>
+    <div
+      id="res"
+      style="
+        width: 200px;
+        height: 200px;
+        background-color: #bbb;
+        font-size: 24px;
+        display: none;
+        margin-top: 20px;
+      "
+    ></div>
+  </body>
+  <script>
+    function round(x, y) {
+      let countX = 0;
+      let countY = 0;
+
+      switch (y) {
+        case "pedra":
+          if (y && x === "tesoura") {
+            console.log("ponto para Y");
+            countY += 1;
+          } else if (y && x === "papel") {
+            console.log("ponto para x");
+            countX += 1;
+          } else {
+            console.log("empate");
+          }
+          break;
+        case "tesoura":
+          if (y && x === "papel") {
+            console.log("ponto para Y");
+            countY += 1;
+          } else if (y && x === "pedra") {
+            console.log("ponto para x");
+            countX += 1;
+          } else {
+            console.log("empate");
+          }
+          break;
+        case "papel":
+          if (y && x === "pedra") {
+            console.log("ponto para Y");
+            countY += 1;
+          } else if (y && x === "tesoura") {
+            console.log("ponto para x");
+            countX += 1;
+          } else {
+            console.log("empate");
+          }
+          break;
+        default:
+          break;
+      }
+      return [countX, countY];
+    }
+
+    function bot() {
+      let option = Math.floor(Math.random() * 3) + 1;
+      switch (option) {
+        case 1:
+          return "tesoura";
+
+        case 2:
+          return "papel";
+
+        case 3:
+          return "pedra";
+      }
+    }
+
+    function match() {
+      alert("Que os jogos comecem.");
+      let arr = [0, 0];
+
+      for (let i = 0; i < 100; i++) {
+        const [x, y] = round(window.prompt("Pedra, Papel ou Tesoura?"), bot());
+        arr[0] += x;
+        arr[1] += y;
+        if (arr[0] == 2 || arr[1] == 2) break;
+      }
+
+      const div = document.getElementById("res");
+      div.style.display = "flex";
+      div.style.justifyContent = "center";
+      div.style.alignItems = "center";
+
+      if (arr[0] > arr[1]) {
+        div.innerHTML = "Você ganhou!!!";
+      } else if (arr[0] < arr[1]) {
+        div.innerHTML = "Você perdeu :(";
+      }
+    }
+  </script>
+</html>
