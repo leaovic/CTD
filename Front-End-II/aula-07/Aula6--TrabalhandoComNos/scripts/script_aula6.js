@@ -10,7 +10,8 @@ console.log(h4);
 //Outra forma, nó textual apenass
 let h4elementoTextual = document.createTextNode("Esse é o novo titulo");
 h4.appendChild(h4elementoTextual)
-h4.appendChild("Novo título"); // Assim da erro, pois ele espera um objeto do tipo nó e recebe uma string
+h4.appendChild("Novo título"); 
+// Assim da erro, pois ele espera um objeto do tipo nó e recebe uma string
 console.log(h4);
 
 //Capturando o elemento pai
@@ -83,3 +84,4 @@ container2.insertBefore(novaDiv, container2.firstChild );
 
 //Insere em um posição específica
 container2.insertBefore(novaDiv, container2.children[2] );
+
