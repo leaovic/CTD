@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header h3  {
+  opacity: 0.7;
+  color: #fffaf2;
+  text-align: center;
+}
+
+p {
+  opacity: 0.7;
+  color: #fffaf2;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  border-radius: 5px;
+  background: #002746;
+  color: #fffaf2;
+  
+}
+
+body {
+  background: #005f9d;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+form {
+  border-radius: 15px;
+  margin:  100px 100px 100px;
+  padding: 30px;
+  background: #002746;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+
+#lista-sonho {
+  margin-bottom: 250px;
+}
+
+.fim {
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  background: #002746;
+  color: #fffaf2;
+  font-size: 15px;
+
+}
+
+
+footer {
+  width: 100%;
+  height: 100%;
+  margin: 100px 100px 0px 0px;
+  padding: 100px 0 100px 0;
+  background: #002746;
+  
+}
+
+
+
+
+button {
+  background: #00a1ff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 1280px) {
+  form {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 785px) {
+  form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
