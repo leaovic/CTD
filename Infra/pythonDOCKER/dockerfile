@@ -1,0 +1,4 @@
+FROM python:alpine3.14
+WORKDIR /ppt/
+COPY pedrapapeltesoura.py /ppt/
+ENTRYPOINT ["python", "pedrapapeltesoura.py"]
