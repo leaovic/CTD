@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "cSpell.enableFiletypes": [
         "!text"
     ]
+=======
+    "livePreview.defaultPreviewPath": "/Checkpoint2_To-Do/index.html"
+>>>>>>> dc0353f0928d53b54786758df2b092cc1cae1d96
 }
